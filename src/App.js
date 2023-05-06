@@ -1,8 +1,9 @@
 import './App.css';
 import Info from './Components/Info/Info';
 import Exercises from './Components/Exercises/Exercises';
+import { useState } from 'react';
 
-function App() {
+const App = () =>{
   const profile = {
     name: 'John Doe',
     location: 'Dhaka, Bangladesh',
@@ -10,9 +11,14 @@ function App() {
     age: '21yrs',
     height: 5.5
   };
+  let total = 0;
+  const addToList = time =>{
+    total += time;
+    localStorage.setItem('time',total);
+  }
   return (
     <div className="App">
-      <Exercises></Exercises>
+      <Exercises addToList={addToList}></Exercises>
       <Info profile={profile}></Info>
     </div>
   );

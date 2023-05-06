@@ -5,7 +5,8 @@ import Break from '../Break/Break';
 import Details from '../Details/Details';
 
 const Info = props => {
-    const {name, location, weight, height, age} = props.profile;
+    const {profile, cnt} = props;
+    const {name, location, weight, height, age} = profile;
     return (
         <div id='info'>
             <div id='profile'>

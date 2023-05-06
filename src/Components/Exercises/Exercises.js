@@ -2,15 +2,13 @@ import React, { useEffect, useState } from 'react';
 import Exercise from '../Exercise/Exercise';
 import './Exercises.css';
 
-const Exercises = () => {
+const Exercises = props => {
+    const {addToList} = props;
     const [exercises, setExercises] = useState([]);
     useEffect(() =>{
         fetch('Data.json')
         .then(response => response.json())
-        .then(exercise => {
-            setExercises(exercise);
-            console.log(exercise);
-        })
+        .then(exercise => setExercises(exercise))
         .catch(error => console.error(error));
     },[]);
     return (
@@ -19,7 +17,7 @@ const Exercises = () => {
             <p>Select today's exercise</p>
             <div id='exercise-container'>
                 {
-                    exercises.map(exercise =><Exercise exercise={exercise} key={exercise.id}></Exercise>)
+                    exercises.map(exercise =><Exercise exercise={exercise} key={exercise.id} addToList={addToList}></Exercise>)
                 }
             </div>
         </div>
