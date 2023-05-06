@@ -36,7 +36,7 @@
 
 .exercise > button{
     width: 90%;
-    background-color: rgb(156, 126, 238);
+    background-color: #5D5FEF;
     color: white;
     font-weight: 600;
     font-size: medium;
@@ -48,7 +48,7 @@
 }
 
 .exercise > button:hover{
-    background-color: rgb(171, 106, 233);
+    background-color: #4b4df0;
 }
 
 .card-img{

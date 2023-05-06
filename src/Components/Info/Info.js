@@ -1,6 +1,8 @@
 import React from 'react';
 import './Info.css';
 import Attributes from '../Attributes/Attributes';
+import Break from '../Break/Break';
+import Details from '../Details/Details';
 
 const Info = props => {
     const {name, location, weight, height, age} = props.profile;
@@ -16,13 +18,18 @@ const Info = props => {
                     </svg>{location}</p>
                 </div>
             </div>
-            <div>
-                <div id='attributes'>
-                    <Attributes value={weight} properties="Weight"></Attributes>
-                    <Attributes value={height} properties="Height"></Attributes>
-                    <Attributes value={age} properties="Age"></Attributes>
-                </div>
+            <div id='attributes'>
+                <Attributes value={weight} properties="Weight"></Attributes>
+                <Attributes value={height} properties="Height"></Attributes>
+                <Attributes value={age} properties="Age"></Attributes>
             </div>
+            <div id='break'>
+                <Break></Break>
+            </div>
+            <div id='details'>
+                <Details></Details>
+            </div>
+            <button id='finish-btn'>Activity Completed</button>
         </div>
     );
 };

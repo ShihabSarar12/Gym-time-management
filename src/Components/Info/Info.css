@@ -37,4 +37,25 @@
     display: flex;
     justify-content: space-between;
     border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+#break, #details{
+    margin-bottom: 2rem;
+}
+
+#finish-btn{
+    width: 100%;
+    border: none;
+    background-color: #5D5FEF;
+    padding: 0.8rem;
+    color: white;
+    font-weight: 500;
+    border-radius: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+#finish-btn:hover{
+    transform: scale(1.05);
+    background-color: #4b4df0;
 }
