@@ -1,0 +1,61 @@
+*{
+    box-sizing: border-box;
+}
+
+.exercise{
+    background-color: white;
+    border-radius: 1rem;
+    overflow: hidden;
+    height: 30rem;
+    position: relative;
+    transition: all 0.2s ease-in-out;
+    padding: 0.7rem;
+}
+
+.exercise:hover{
+    transform: scale(1.02);
+}
+
+.exercise > img{
+    border-radius: 10px;
+}
+
+.exercise > h1{
+    padding: 0 0.7rem;
+}
+
+.exercise > p{
+    font-size: 0.2rem;
+}
+
+.exercise-info{
+    padding: 0 0.7rem;
+    margin: 0.5rem 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.exercise > button{
+    width: 90%;
+    background-color: rgb(156, 126, 238);
+    color: white;
+    font-weight: 600;
+    font-size: medium;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem;
+    position: absolute;
+    bottom: 0.7rem;
+}
+
+.exercise > button:hover{
+    background-color: rgb(171, 106, 233);
+}
+
+.card-img{
+    width: 100%;
+    height: 40%;
+}
+
+.bolded{
+    font-weight: 600;
+}

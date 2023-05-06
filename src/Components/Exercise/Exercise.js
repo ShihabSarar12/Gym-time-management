@@ -2,14 +2,17 @@ import React from 'react';
 import './Exercise.css'
 
 const Exercise = props => {
-    const {picture,name,time,age} = props.exercise;
+    const {img,name,time,age} = props.exercise;
     return (
-        <div style={{backgroundColor: "bisque"}}>
-            <img className='card-img' src={picture} alt="Dumble" />
+        <div className='exercise'>
+            <img className='card-img' src={img} alt="Dumble" />
             <h1>{name}</h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, fuga totam tempora at labore commodi?</p>
-            <p>For Age: {age}</p>
-            <p>Time required: {time}s</p>
+            <div className='exercise-info'>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita, fuga totam tempora at labore commodi?</p>
+                <h4 className='bolded'>For Age: {age}</h4>
+                <h4 className='bolded'>Time required: {time}s</h4>
+            </div>
+            <button>Add to list</button>
         </div>
     );
 };

@@ -1,0 +1,40 @@
+#info{
+    position: fixed;
+    height: 100%;
+    padding: 1rem;
+    right: 0;
+}
+
+#info-img{
+    margin-top: 0.3rem;
+    width: 20%;
+    height: 3rem;
+    border-radius: 50%;
+}
+
+#profile{
+    padding: 1rem;
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+#name{
+    margin: 0;
+}
+
+#location{
+    margin: 0;
+}
+
+#profile-icon{
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+#attributes{
+    background-color: rgb(206, 206, 206);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 1rem;
+}

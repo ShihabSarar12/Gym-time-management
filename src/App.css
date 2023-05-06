@@ -1,4 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&family=Climate+Crisis&family=Kanit:ital,wght@0,700;1,400&family=Pacifico&family=Pathway+Extreme:wght@500&family=Poppins:wght@400;500&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+}
+
 .App{
+    background: linear-gradient(to right,rgb(196, 196, 196),white);
     display: grid;
     grid-template-columns: 4fr 1fr;
 }
