@@ -2,13 +2,11 @@ import React from 'react';
 import './Info.css';
 import Attributes from '../Attributes/Attributes';
 import Break from '../Break/Break';
-import Details from '../Details/Details';
 
-const Info = props => {
-    const {profile, cnt} = props;
+const Info = ({profile,secClicked}) => {
     const {name, location, weight, height, age} = profile;
     return (
-        <div id='info'>
+        <div>
             <div id='profile'>
                 <img id='info-img' src="https://i0.wp.com/studiolorier.com/wp-content/uploads/2018/10/Profile-Round-Sander-Lorier.jpg?ssl=1" alt="" />
                 <div>
@@ -25,12 +23,8 @@ const Info = props => {
                 <Attributes value={age} properties="Age"></Attributes>
             </div>
             <div id='break'>
-                <Break></Break>
+                <Break secClicked={secClicked}></Break>
             </div>
-            <div id='details'>
-                <Details></Details>
-            </div>
-            <button id='finish-btn'>Activity Completed</button>
         </div>
     );
 };

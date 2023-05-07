@@ -1,9 +1,4 @@
-#info{
-    position: fixed;
-    height: 100%;
-    padding: 1rem;
-    right: 0;
-}
+
 
 #info-img{
     margin-top: 0.3rem;
@@ -58,4 +53,14 @@
 #finish-btn:hover{
     transform: scale(1.05);
     background-color: #4b4df0;
+}
+
+.time {
+    background-color: rgb(206, 206, 206);
+    padding: 0.5rem 0.75rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }

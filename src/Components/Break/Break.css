@@ -11,7 +11,8 @@
     gap: 0.5rem;
 }
 
-.btn-sec{
+#btn-sec10,#btn-sec20,#btn-sec30,
+    #btn-sec40,#btn-sec50{
     border: none;
     background-color: white;
     width: 35px;
